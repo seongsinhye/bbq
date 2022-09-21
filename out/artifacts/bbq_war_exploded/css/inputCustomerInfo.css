@@ -1,0 +1,81 @@
+.check {
+    clear: both;
+}
+
+#hr {
+    width: 300px;
+    margin: 30px 490px;
+}
+
+.check input, .getSelection input, .getSelection button {
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0px;
+}
+
+.check, .getSelection {
+    margin: 0px 490px;
+}
+
+#selectionP {
+    padding: 0px 490px;
+    font-size: 15pt;
+}
+
+.getSelection input, #confirmation_button {
+    margin: 10px 0px;
+}
+
+.left {
+    float: left;
+}
+
+.getSelection input {
+    width: 195px;
+}
+
+.getSelection button {
+    width: 100px;
+    margin: 10px 0px 0px 5px;
+    height: 50px;
+}
+
+#enter_selection1 button, #enter_selection3 button {
+    color: white;
+    background-color: rgb(59, 55, 55);
+    border: none;
+    padding: 10px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+#birth_div input {
+    width: 175px;
+}
+
+#M button, #F button {
+    background-color: rgb(242, 242, 242);
+    width: 60px !important;
+}
+
+#M button {
+    border: 1px solid rgb(219, 219, 219);
+}
+
+#F button {
+    border: 1px solid rgb(219, 219, 219);
+    border-left: none;
+    margin: 18px 0px 10px 0px;
+}
+
+#confirmation {
+    margin: 0px 490px;
+    padding: 0px;
+}
+
+#pw_regultaion {
+    color: gray;
+    font-size: 10pt;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}

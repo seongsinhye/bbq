@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객센터</title>
+    <link rel="stylesheet" href="../css/customerinfo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+  <script>
+    $(function() {
+        $('#sub').hide();
+        $('#main_nav').hover(function() {
+            $(this).parent().find('#sub').slideDown();
+            $(this).parent().hover(function() {
+                $('#sub').hover(function() {
+                    $(this).parent().find('#sub').slideDown();
+                    $(this).parent().hover(function() {
+                        
+                    });
+                });
+            }, function() {
+                $(this).parent().find('#sub').slideUp();
+            });
+        });
+    });
+
+$(document).ready(function() {
+     $('.slider').bxSlider();
+});
+
+function moveToTop() {
+    window.scrollTo(0,0);
+}
+
+$(document).ready(function () {
+    var fixedScroll = $('#fixedNav').offset();
+    $(window).scroll(function() {
+        if($(document).scrollTop() > fixedScroll.top) {
+            $('#fixedNav').addClass('fixIt');
+        } else {
+            $('#fixedNav').removeClass('fixIt');
+        }
+    });
+});
+
+
+
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+    <div class="btn-group-vertical quickMenu " role="group" aria-label="Vertical radio toggle button group" id="sideBtn">
+      <button type="button" id="grayBtn" class="side1">
+        <img src="https://www.bbq.co.kr/images/common/ico_quickmenu01.png" alt="" id="btnImg1">
+        <p>창업정보</p>
+      </button>
+
+      <button type="button" id="grayBtn">
+          <img src="https://www.bbq.co.kr/images/common/ico_quickmenu02.png" alt="" id="btnImg2">
+          <p>치킨캠프</p>
+      </button>
+
+      <button type="button" id="grayBtn">
+          <img src="https://www.bbq.co.kr/images/common/ico_quickmenu03.png" alt="">
+          <p>이벤트</p>
+      </button>
+
+      <button type="button" id="grayBtn" class="side4">
+          <img src="https://www.bbq.co.kr/images/common/ico_quickmenu04.png" alt="">
+          <p>e-쿠폰</p>
+      </button>
+    </div>
+
+  <nav class="py-2">
+      <div class="container d-flex flex-wrap" id="nav">
+          <ul class="nav me-auto" id="nav1">
+              <li class="nav-item" id="nav-item1"><a href="#" class="nav-link link-dark px-2 active" aria-current="page" id="active_nav" style="color: white;">비비큐치킨</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">비비큐 몰</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">닭익는마을</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">우쿠야</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">올떡</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">창업</a></li>
+          </ul>
+          <ul class="nav" id="nav2">
+              <li class="nav-item"><a href=".html" class="nav-link link-dark px-2">로그인</a></li>
+              <li class="nav-item"><a href=".html" class="nav-link link-dark px-2">회원가입</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">고객센터</a></li>
+          </ul>
+      </div>
+  </nav>
+
+  <div class="container">
+      <div id="nav_div1">
+          <a href="tml"><img src="https://www.bbq.co.kr/images/common/logo_header_bbq.png" alt=""></a>
+      </div>
+      <div class="btn-group">
+          <div id="btn-group1">
+              <p><img src="https://www.bbq.co.kr/images/common/popular_img01.png" alt="">&nbsp;&nbsp;실시간 인기</p>
+          </div>
+          <div id="btn-group2">
+              <a href="#" class="btn">1. 황금올리브치킨</a>
+          </div>
+      </div>
+      <div id="nav_div3">
+          <a href=""><button type="button" id="button_box">온라인 주문</button></a>
+      </div>
+      <div id="nav">
+          <div id="main_nav">
+              <ul>
+                  <li><a href="#" id="nav_color">메뉴 소개</a></li>
+                  <li><a href="#" id="nav_color">매장 찾기</a></li>
+                  <li><a href="#" id="nav_color">브랜드</a></li>
+                  <li><a href="#" id="nav_color">창업정보</a></li>
+                  <li><a href="#" id="nav_color">이벤트</a></li>
+              </ul>
+          </div>
+          <div id="sub">
+              <div id="sub_menu">
+                  <ul class="menu">
+                      <li><a href="#" id="nav_color">수제맥주 세트</a></li>
+                      <li><a href="#" id="nav_color">신메뉴</a></li>
+                      <li><a href="#" id="nav_color">황올 시그니처</a></li>
+                      <li><a href="#" id="nav_color">1인분 메뉴</a></li>
+                      <li><a href="#" id="nav_color">황올한 양념</a></li>
+                      <li><a href="#" id="nav_color">황올한 구이</a></li>
+                  </ul>
+                  <ul class="menu">
+                      <li><a href="#" id="nav_color">매장 찾기</a></li>
+                  </ul>
+                  <ul class="menu">
+                      <li><a href="tory.html" id="nav_color">브랜드 스토리</a></li>
+                      <li><a href="#" id="nav_color">공지사항</a></li>
+                  </ul>
+                  <ul class="menu">
+                      <li><a href="tml" id="nav_color">창업 정보</a></li>
+                  </ul>
+                  <ul class="menu">
+                      <li><a href="#" id="nav_color">진행 중인 이벤트</a></li>
+                      <li><a href="#" id="nav_color">지난 이벤트</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+    <div class="container_main">
+
+      <div class="breadcrumb-wrap">
+        <ul class="breadcrumb">
+          <li>bbq home</li>
+          <li>고객센터</li>
+        </ul>
+      </div>
+
+
+
+
+      <div class="content_main2">
+        <p class="customerTxt">고객센터</p>
+
+        <div class="tab_wrap tab_type3">
+            <ul class="tab">
+                <li class="on"><a href="#"><span>자주 묻는 질문</span></a></li>
+                <li><a href="#"><span>고객의 소리</span></a></li>
+            </ul>
+        </div>
+
+
+        <div class="icon-top ">
+            <div class="img"><img src="https://www.bbq.co.kr/images/customer/ico_big_qa.gif" alt=""></div>
+            <h3>고객님께서 자주 문의하시거나 궁금해하는 질문들을 모아서 정리하였습니다.</h3>
+            <p>
+                찾으시는 내용이 없거나 궁금한 사항이 있으면 고객의 소리에 의견을 남겨주세요. 고객님의 새로운 행복을 위해서 언제나 최선을 다하는 BBQ가 되겠습니다.
+            </p>
+        </div>
+
+    <div class="accordion accordion-flush section_faq" id="accordionExample">
+        <div class="accordion-item box">
+          <h2 class="accordion-header" id="headingOne">
+            <span class="ico-branch red">비비큐 치킨</span>
+            <button class="accordion-button collapsed question section_question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              BBQ앱 주문가능 시간은 언제인가요?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body answer">
+              <p> 오전 11시 ~ 오후 11시 입니다. </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item box">
+          <h2 class="accordion-header" id="headingTwo">
+            <span class="ico-branch red">비비큐 치킨</span>
+            <button class="accordion-button collapsed question section_question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              엑스트라 버진 올리브유는 샐러드용으로 알려져 있는데, 튀김 오일로 적합한지? 
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body answer " style="display: block;">
+              
+                
+                <p>
+                  <span style="font-size: 11pt;">1. 국제 올리브 오일 협회 및 Codex 기준에 의한 올리브오일에 대한 등급 기준표는 아래와 같습니다.</span>
+                  <br>
+                  <span style="font-size: 11pt;">가. 올리브오일의 등급과 BBQ가 사용하는 올리브오일의 원료인 엑스트라 버진 올리브오일</span>
+                  <br>
+                  <span style="font-size: 11pt;">                        나. 제일높은 등급 : 엑스트라 버진 올리브 오일 (Extra Virgin Olive Oil) </span>
+                    <br><span style="font-size: 11pt;">- 산도 : 1.0도 미만, 최첨단 콜드프레싱공법</span>
+                    <br><span style="font-size: 11pt;">                        다. 퓨어올리브오일(Pure Olive Oil) : 산도 1.5도이하</span>
+                    <br><span style="font-size: 11pt;">                        라. 포마세오일(Pomace Olive Oil) : 산도 1.5도이하</span><br><br>
+                    <span style="font-size: 11pt;">2. 등급별 올리브유 착유과정은 다음과 같습니다.</span><br>
+                    <span style="font-size: 11pt;">가. 엑스트라 버진 올리브오일은, 최첨단 콜드프레싱 공법에 의해, 압착하여 최초로 착유된 유지를 의미합니다. </span><br>
+                    <span style="font-size: 11pt;">참기름의 경우는 참깨를 볶아서 짜기 때문에 참기름 압착방법과는 다릅니다.</span><br>
+                    <span style="font-size: 11pt;">1) BBQ의 올리브오일은 국내 최대 유지업체 롯데삼강이 엑스트라 버진 올리브오일 100%를 수입하여 3년여 연구개발 결과인 
+                      최신 공법을 이용하여 엑스트라 버진 올리브오일 속에 있는 과육등의 제거를 통해 그 순정등급을 더욱 향상시켜서 제조한 더욱 깨끗한 올리브오일입니다.</span><br>
+                      <span style="font-size: 11pt;">2) 그러므로 BBQ의 올리브오일은 제조사인 롯데삼강이 관계기관으로부터 정식 제품 신고(제조라벨 참조)를 득한 바와 같이, 
+                        엑스트라 버진등급의 올리브오일 100%를 사용하여 제조한 것이지 일체의 타 등급의 올리브오일이나 타 오일을 섞어서 만든 오일이 아닙니다.</span><br>
+                        <span style="font-size: 11pt;">나. 퓨어 올리브오일은, 버진 올리브오일중 산도가 높은(3도이하) 올리브유(Lampante)를 Refining(정제)공정을 거쳐 기계적으로
+                           정제한 오일에 버진 올리브유 일부(10-20%정도)를 섞어서 만든 오일입니다.                         다. 포마세 올리브오일은, 
+                           버진 올리브오일을 착유하고 남은 물질을, 유기용매를 이용해 화학적으로 추출되는 것으로서, 가장 낮은 등급입니다.</span><br><br>
+                           <span style="font-size: 11pt;">3. 등급별 올리브 오일의 용도(국제올리브오일협회자료)는 다음과 같습니다.</span><br>
+                           <span style="font-size: 11pt;">가. 엑스트라 버진 올리브 오일은, 제일 높은 등급이므로 값이 비싸고, 생으로 식음용은 물론, 
+                            후라잉요리 등으로도 상용되고 있습니다.</span><br><span style="font-size: 11pt;">나. 퓨어 올리브오일(Lampante)은, 순도가 낮기 때문에 값이 싸고,
+                               올리브 종주국에서는 주로 후라잉을 통해서 요리하는데 사용하고 있습니다.</span><br><span style="font-size: 11pt;">다. 포마세 올리브 오일은,
+                                 유기용매제가 완전히 제거되지 않을 우려가 있어 우리나라의 경우에는 수입이 금지된 등급입니다.</span><br><span style="font-size: 11pt;">라. 
+                                  따라서 올리브종주국들의 일반 가정에서는, 값이 싸기 때문에 등급이 낮은 값싼 퓨어오일을, 주로 후라잉에 쓰고, 값비싼 엑스트라 버진 올리브오일은, 
+                                  생으로 식음용에 아껴 사용한다는 의미이지, 후라잉 오일로 사용할 수 없는 것은 아닙니다. </span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item box">
+          <h2 class="accordion-header" id="headingThree">
+            <span class="ico-branch red">비비큐 치킨</span>
+            <button class="accordion-button collapsed question section_question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              엑스트라 버진 올리브유는 발연점이 낮고 고온시 불에 탄다고 하는데, 튀김 오일로 적합한지?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="answer" style="display: block;">
+                <p>
+                </p><p><span class= "title2"style="font-size: 11pt;">1. 올리브 오일의 모든 등급은 튀김용으로 적합합니다.</span><br>&nbsp;</p>
+                <table class="board_typeA __se_tbl_ext"><caption>
+                <span style="font-size: 11pt;">각종 유지의 발연점, 인화점과 연소점 </span></caption><colgroup><col style="width: 40%;">
+                <col style="width: 20%;"><col style="width: 20%;"><col style="width: 20%;"></colgroup><thead><tr>
+                <th style="width: 40%;"><span style="font-size: 11pt;">식용유지의 종류</span></th><th style="width: 20%;">
+                <span style="font-size: 11pt;">발연점</span><br><span style="font-size: 11pt;">(smoke points)</span></th>
+                 <th style="width: 20%;"><span style="font-size: 11pt;">인화점</span><br><span style="font-size: 11pt;">(flash points)</span>
+                 </th><th style="width: 20%;"><span style="font-size: 11pt;">연소점</span><br><span style="font-size: 11pt;">(fire points)</span>
+                </th></tr></thead><tbody><tr><td class="tl" style="width: 40%;">
+                 <span style="font-size: 11pt;">조제 올리브유(olive oil, virgin)</span></td><td style="width: 20%;">
+                  <span style="font-size: 11pt;">170-199(210)</span></td><td style="width: 20%;"><span style="font-size: 11pt;">321</span>
+                  </td><td style="width: 20%;"><span style="font-size: 11pt;">361</span></td></tr><tr>
+                   <td class="tl" style="width: 40%;"><span style="font-size: 11pt;">정제 피마자유(castor oil, refined)</span>
+                   </td><td style="width: 20%;"><span style="font-size: 11pt;">200</span></td><td style="width: 20%;">
+                    <span style="font-size: 11pt;">298</span></td><td style="width: 20%;"><span style="font-size: 11pt;">335</span>
+                      </td></tr><tr><td class="tl" style="width: 40%;"><span style="font-size: 11pt;">조제 옥수수유(corn oli, crude)</span>
+                    </td><td style="width: 20%;"><span style="font-size: 11pt;">178</span></td><td style="width: 20%;">
+                    <span style="font-size: 11pt;">294</span></td><td style="width: 20%;"><span style="font-size: 11pt;">346</span>
+                     </td></tr><tr><td class="tl" style="width: 40%;"><span style="font-size: 11pt;">정제 옥수수유(corn oil, refined)</span>
+                    </td><td style="width: 20%;"><span style="font-size: 11pt;">227</span></td><td style="width: 20%;">
+                   <span style="font-size: 11pt;">326</span></td><td style="width: 20%;"><span style="font-size: 11pt;">359</span>
+                   </td></tr><tr><td class="tl" style="width: 40%;">
+                   <span style="font-size: 11pt;">정제 아마인유(linseed oil, refined)</span></td>
+                   <td style="width: 20%;"><span style="font-size: 11pt;">163</span></td><td style="width: 20%;">
+                    <span style="font-size: 11pt;">287</span></td><td style="width: 20%;"><span style="font-size: 11pt;">353</span>
+                      </td></tr><tr><td class="tl" style="width: 40%;">
+                      <span style="font-size: 11pt;">조제 엑스펠라추출 대두유(crude, expeller, soybean oil)</span>
+                      </td><td style="width: 20%;"><span style="font-size: 11pt;">181</span></td><td style="width: 20%;">
+                       <span style="font-size: 11pt;">296</span></td><td style="width: 20%;"><span style="font-size: 11pt;">351</span></td></tr><tr>
+                        <td class="tl" style="width: 40%;"><span style="font-size: 11pt;">조제 용매추출 대두유(crude, extracted, soybean oil)</span>
+                         </td><td style="width: 20%;"><span style="font-size: 11pt;">210</span></td><td style="width: 20%;">
+                         <span style="font-size: 11pt;">317</span></td><td style="width: 20%;"><span style="font-size: 11pt;">354</span></td></tr></tbody>
+                          </table>
+                          <p class="p_tab"><br><br>
+                            <span style="font-size: 11pt;">                        * 출처 : 1998간, 식품화학 참조(Lowe, Bell, Meyer 분석자료)</span>
+                          <br><span style="font-size: 11pt;">· 국제 올리브오일 협회(IOOC) 발표자료는 발연점이 210℃임</span><br>
+                        <span style="font-size: 11pt;">· 올리브 열매의 품종, 수확시기, 과육의 상태에 따라서 발연점은 달라질 수 있음</span><br><br>
+                        <span style="font-size: 11pt;"> 나. 이상에서 보는바와 같이 올리브 오일은, 일반 식용유에 비해서 발연점, 인화점, 연소점이 높기 때문에, 국제 올리브 오일 협회(IOCC)에서는 올리브 오일이, 가장 이상적인 튀김 오일이라고 발표하고 있습니다.</span><br>
+                        <span style="font-size: 11pt;">다. 그러므로 BBQ 올리브 럭셔리 치킨은, 엑스트라 버진 올리브오일 100%를 원료로 한 올리브오일을 사용하여, 165℃에서 조리하므로 안정성 측면에서 가장 적합(Olive Oil is ideal for frying)합니다.</span><br>
+                        <span style="font-size: 11pt;">라. 또한 올리브 종주국의 세계적인 올리브유 생산업체 폰즈사와, 국내 최대 유 지전문업체인 롯데삼강, BBQ중앙연구소 등 최고의 기술진들이 3년여 각고의 연구 끝에 프라잉오일에 최적합하게 만들어낸, 엑스트라 버진 올리브오 일 100%를 원료로 한 올리브오일이므로, 프라잉오일 적합성에 대해서는 현장에서 확인하지 않더라도 신뢰하셔도 됩니다. </span><strong><br></strong></p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item box">
+            <h2 class="accordion-header" id="headingFour">
+              <span class="ico-branch red">비비큐 치킨</span>
+              <button class="accordion-button collapsed question section_question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                올리브유는 열을 가하면 불포화지방산이 산화되기 쉽고, 산화되면 트랜스지방산으로 변형된다고 하는데?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="answer" style="display: block;">
+                  <p>
+                  <span style="font-size: 11pt;">1. BBQ 올리브 오일은 열을 가하더라도 산화 안정성등이 타 식용유에 비해서 훨씬 우수합니다.</span>
+                  <br><span style="font-size: 11pt;">가. BBQ 올리브유 튀김 마리수별 산가 및 트랜스지방산 함량 분석결과</span><br><br>
+                </p><table class="board_typeA __se_tbl_ext"><colgroup><col style="width: 14.28%;"><col style="width: 14.28%;">
+                  <col style="width: 14.28%;"><col style="width: 14.28%;"><col style="width: 14.28%;"><col style="width: 14.28%;">
+                  <col style="width: 14.28%;"></colgroup><thead><tr><th style="width: 14.28%;"><span style="font-size: 11pt;">구분</span>
+                  </th><th style="width: 14.28%;"><span style="font-size: 11pt;">가온전</span></th><th style="width: 14.28%;">
+                   <span style="font-size: 11pt;">40수</span></th><th style="width: 14.28%;"><span style="font-size: 11pt;">50수</span>
+                  </th><th style="width: 14.28%;"><span style="font-size: 11pt;">80수</span></th><th style="width: 14.28%;">
+                  <span style="font-size: 11pt;">100수</span></th><th style="width: 14.28%;"><span style="font-size: 11pt;">120수</span>
+                  </th></tr></thead><tbody><tr><td style="width: 14.28%;"><span style="font-size: 11pt;">AV(산가)</span></td>
+                  <td style="width: 14.28%;"><span style="font-size: 11pt;">0.08</span></td><td style="width: 14.28%;">
+                 <span style="font-size: 11pt;">0.28</span></td><td style="width: 14.28%;"><span style="font-size: 11pt;">0.33</span>
+                 </td><td style="width: 14.28%;"><span style="font-size: 11pt;">0.53</span></td><td style="width: 14.28%;">
+                 <span style="font-size: 11pt;">0.70</span></td><td style="width: 14.28%;"><span style="font-size: 11pt;">0.80</span>
+                 </td></tr><tr><td style="width: 14.28%;"><span style="font-size: 11pt;">P.V.O(과산화물)</span></td>
+                 <td style="width: 14.28%;"><span style="font-size: 11pt;">0.89</span></td><td style="width: 14.28%;">
+                 <span style="font-size: 11pt;">4.20</span></td><td style="width: 14.28%;"><span style="font-size: 11pt;">3.64</span>
+                 </td><td style="width: 14.28%;"><span style="font-size: 11pt;">3.59</span></td><td style="width: 14.28%;">
+                <span style="font-size: 11pt;">1.33</span></td><td style="width: 14.28%;"><span style="font-size: 11pt;">2.58</span>
+                </td></tr><tr><td style="width: 14.28%;"><span style="font-size: 11pt;">COLOR(R/Y)(Lovibond1" cell)</span>
+                 </td><td style="width: 14.28%;"><span style="font-size: 11pt;">0.9/1.1</span></td><td style="width: 14.28%;">
+                <span style="font-size: 11pt;">2.4/19.0</span></td><td style="width: 14.28%;">
+                 <span style="font-size: 11pt;">2.8/26.0</span></td><td style="width: 14.28%;">
+                 <span style="font-size: 11pt;">4.4/7.0</span></td><td style="width: 14.28%;">
+                  <span style="font-size: 11pt;">7.6/70.0</span></td><td style="width: 14.28%;">
+                 <span style="font-size: 11pt;">6.4/60.0</span></td></tr><tr><td style="width: 14.28%;"><br></td>
+                 <td style="width: 14.28%;"></td><td style="width: 14.28%;"></td><td style="width: 14.28%;"></td>
+                  <td style="width: 14.28%;"></td><td style="width: 14.28%;"></td><td style="width: 14.28%;">
+                  </td></tr><tr><td style="width: 14.28%;"></td><td style="width: 14.28%;"></td>
+                 <td style="width: 14.28%;" colspan="6"><span style="font-size: 11pt;">&nbsp;</span></td></tr>
+                  </tbody></table><br><span style="font-size: 11pt;"> 
+                           
+                       * 출처 : 롯데 중앙연구소 연구 7팀(유지)</span><br>
+                       <span style="font-size: 11pt;">나. 상기 시험분석 표에서 보는 바와 같이, 산화 안전성도 높을 뿐만아니라, 
+                         가열후 비만의 주원인인 트랜스지방산도, 세계 보건기구 권고량(일/2.2g 이하)에 비해 흔적(Trace) 정도일 만큼 자유로운 오일입니다. 
+                         다. 가열후 산화 안정성은, 올리브 오일(47.65H)이 카놀라유(16.44H), 일반 식용유 (평균 15H 내외)에 비해 훨씬 산화 안정성이 
+                         높은 오일입니다.</span><br><span style="font-size: 11pt;">라. 그러므로 올리브유는, 열을 가하더라도 올리브유의 최적합 
+                        튀김온도(ideal temperature for frying)범위 내에서는, 일반 식용유와는 비교할 수 없을 정도로 안전 합니다.</span>
+                          <br><br><span style="font-size: 11pt;">2. 식용유지별로 단일불포화지방산의 함량비교표(아래)에 의하면, 올리브유종이 
+                         어떠한 식용유보다 단일불포화지방산을 가장 많이 함유하고 있습니다. </span><br><span style="font-size: 11pt;"> (유지별 지방산 조성표) 단위:%</span><br><span style="font-size: 11pt;"> * 출처 : 油 脂 Vol. 53 No.1 (2000), Japan </span><br><span style="font-size: 11pt;">- C16:1 : 팔밑올레인산(palmitoleic acid) - C18:1 : 올레인산(oleci acid) - C18:2 : 리놀레인산(linoleic acid) - C18:3 : 리놀레닌산(linolenic aicd) - C20:1 : 가돌레산(gadoleic acid) 가. 지방산의 종류 중, 복합불포화지방산(리놀레인산, 리놀레닌산)의 경우는 불 포화 도수가 높을수록 단일불 포화지방산(올레인산)에 비해 산화속도가 빠릅니다. 나. 단일불포화지방산인 올레인산(Oleic acid18:1)에 비해 복합불포화지방산인 리놀레인산(Linoleic-C18:2)은 16배, 리놀레닌산(Linolenic acid-C18:3)은 10.34배 정도 산패속도가 빠릅니다. (출처:식품화학교재) 다. 그러므로 올리브유는 산화안정성 시간이 복합불포화지방산에 비해 훨씬 긴 단일불포화지방산이 많이 포함되어 있어, 다른 식용유(카놀라유 등) 대비 유지 산화안정성이 높기 때문에 좋은 품질의 튀김물을 만들 수 있습니다. </span><p>&nbsp;</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+          </div><div class="accordion-item box">
+            <h2 class="accordion-header" id="headingFive">
+              <span class="ico-branch red">비비큐 치킨</span>
+              <button class="accordion-button collapsed question section_question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                그전에 비해서 고소한 맛이 떨어질수도 있다는데?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="answer" style="display: block;">
+                  <p>
+                  </p><p><span style="font-size: 11pt;">1. BBQ치킨은 조리하는 식용유에 의해서 맛을 내는 것이 아니고 BBQ만의 맛을 내는
+                     친환경비법(Taste Secret 세계 특허출원 중)에 의하여, 치킨자체에 맛을 살 속 깊이 내게 하여, BBQ의 차별화 되는 맛을 냈기 때문에, 
+                     오일의 변경에 따라 맛의 품질 변화는 없고, 천연 올리브향이, 풍미를 더욱 돋게 하는 효과가 있으며, 또한 소비자 건강에 유해한 모든 지방으로부터,
+                      자유로운 천연 식물성 최상급 엑스트라 버진 올리브유 100%를 원료로한 올리브오일을 사용함으로써 맛과 고객의 건강을 동시에 향상시킬 수 있게 되었습니다. </span>
+                      <br><br><span style="font-size: 11pt;">2. BBQ는 국내산 싱싱닭만을 사용하고 있으며 중앙연구소의 기술력으로, 첨단 식품소재 과학기술개발을 통해
+                      육질을 더욱 부드럽고 쫄깃하게 유지 시켜주는 성분과 다양한 천연 허브향을 함유함으로써 신선하고 깨끗한 올리브오일과 가장 잘 어울릴 수 있도록 설계 하였습니다. </span>
+                      <br><br><span style="font-size: 11pt;">3. 육즙의 유출을 방지하며, 결착성을 높여주는 친환경 신소재를 사용 하였으며 고소한 풍미를 강화시켜주는
+                       특수한 내열성이 강한 천연 소재를 사용하여 올리브의 깔끔한 맛에 더욱 어울리도록 설계하여 고소한 맛을 한 차원 높였습니다. </span>
+                       <br><br><span style="font-size: 11pt;">4. 풍미가 유지되도록 모든 전과정의 조리 비법이 담긴 과학적인 조리 매뉴얼에 의거 조리순서,
+                       후라잉 온도 및 시간, 올리브오일의 관리를 통해 매장내에서 제품을 관리함으로써 전국의 모든 매장에서 맛의 일정한 품질을 유지 할 수 있도록 관리에
+                       만전을 기하고 있기 때문에 그전에 비해 훨씬 맛의 품질이 향상 되었습니다.</span>&nbsp;</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item box">
+            <h2 class="accordion-header" id="headingSix">
+              <span class="ico-branch red">비비큐 치킨</span>
+              <button class="accordion-button collapsed question section_question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                올리브 오일로 쿠킹시 높게 가열하면 영양소가 파괴된다는데?
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="answer" style="display: block;">
+                  <p>
+                  <span style="font-size: 11pt;">고온(70℃)에서 파괴되는 물질은 단백질로서 올리브유에는 거의 존재하지 않는 물질입니다. 
+                    모든 식품은 가열하면 그 영양 성분이 조금씩 파괴(예. 비타민류)됩니다. 오일의 영양성분 파괴를 위한 온도는 약 200도 이상되는 온도에서 장시간 가열시간이 가해져야 
+                    그 성분이 모두 파괴된다 할 수 있습니다. 올리브유의 가장 중요한 특성인 지방산의 조성은 튀김과정 중 거의 변화하지 않으며 기타 미량 물질이 약간 줄어들 뿐입니다.
+                   </span></p><p>&nbsp;</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item box">
+            <h2 class="accordion-header" id="headingSeven">
+              <span class="ico-branch red">비비큐 치킨</span>
+              <button class="accordion-button collapsed question section_question" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                다른 오일과 혼합할 가능성은 없는지요?
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="answer" style="display: block;">
+                  <p>
+                  <span style="font-size: 11pt;">1. 프랜차이즈 산업은 공동구매, 공동물류, 공동마켓팅, 교육, 상품기술개발 (R&amp;D), 
+                    경영컨설턴트(M/C)등을 통한 사후관리 System등 고도의 전문 경영 Know-How와 기본적 infra를 갖추고 있어야 합니다.
+                     BBQ는 이러한 프랜차이즈 infra를 완벽하게 잘 갖춘 회사입니다.</span><br><span style="font-size: 11pt;">가. 공동구매, 물류를 통한 일일 콜드체인 시스템완비 </span>
+                     <br><span style="font-size: 11pt;"> 나. 국내최초 세계적인 치킨대학 보유 </span><br>
+                     <span style="font-size: 11pt;"> 다. BBQ중앙연구소의 20여명의 석박사를 통한 고품질의 상품 연구 및 개발 </span><br>
+                     <span style="font-size: 11pt;"> 라. 경영컨설컨트와 공동마켓팅을 통한 영업활성화 지도등 </span><br><span style="font-size: 11pt;">
+                      2. 그러므로 저희 BBQ는 본사에서 공동구매, 공동물류를 통하여 전가맹점에 일괄 공급하므로, 전가맹점은 엑스트라 버진 올리브 오일100%를 원료로한 올리브오일을 정확히 사용하고 
+                      있습니다. </span><br><span style="font-size: 11pt;">
+                      3. 또한 당사는 컴퓨터 시스템(G-ERP)을 통하여, 리얼타임 가맹점의 원자재 및 사용량을 확인하고 있을 뿐만 아니라, 경영컨설턴트가 매일 가맹점 지도순회를 통하여, 
+                      산가 측정표(산가체커)등으로 오일의 산가를 측정하여, 당사오일 사용 기준 매뉴얼을 철저히 준수토록 하고 있습니다. </span><br><span style="font-size: 11pt;">
+                      4. 특히 후라이드치킨에서 가장 중요한 원료인 오일을 본사 공급품 외의 것을 사용하거나 혼합할 경우는 계약해지 사항이기도 하지만, BBQ 가맹점은 직업적 정직성이 갖춰져 있기 
+                      때문에, 규정이외의 오일등을 사용하는 문제점은 일체 발생되지 않고 있습니다. </span><br><span style="font-size: 11pt;">
+                      5. 참고로 특히 프랜차이즈 산업의 기본적 인프라를 갖추지 않고 있는 회사들의 경우는 관리체계가 갖춰져 있지 않기 때문에 공동구매 제도가 없어서 가맹 점포별로 오일을 
+                      구입하도록 하는 경우는 불량 오일등의 문제가 발생될 수도 있습니다. </span></p><p>&nbsp;</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      </div>
+      </div>
+
+      <section class="section section-botContact mar-t70">
+				<div class="div-table">
+					<div class="tr">
+            
+						<div class="td cs">
+              
+							<dl>
+                <i class="bi bi-telephone iconSize"></i>
+								<dt>고객센터</dt>
+								<dd>1588-9282</dd>
+							</dl>
+							<p>토요일,공휴일은 휴무 / 운영시간 10:00~18:00</p>
+						</div>
+						<div class="td inq">
+							<dl>
+                <i class="bi bi-house-door-fill iconSize" ></i>
+								<dt>창업문의</dt>
+								<dd>080-383-9000</dd>
+							</dl>
+							<p>연중무휴 상담가능 / 운영시간 06:00~24:00</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+      
+
+      <div class="container">
+        <footer>
+            <div id="footer1">
+                <h5>주식회사 제너시스비비큐</h5>
+                <p id="p1"><span>주문번호 : </span><span>1588-9282&nbsp;&nbsp;</span>&nbsp;&nbsp;<span>고객센터 : </span><span>1588-9282&nbsp;&nbsp;</span>&nbsp;&nbsp;<span>창업문의 : </span><span>080-383-9000</span></p>
+                <p id="p2"><span>대표자 : 이승재&nbsp;&nbsp;</span><span>&nbsp;&nbsp;서울시 송파구 중대로 64(문정동)&nbsp;&nbsp;</span><span>&nbsp;&nbsp;통신판매업신고 : 2010-서울송파-1181호&nbsp;&nbsp;</span><span>&nbsp;&nbsp;사업자등록번호 : 207-81-43555</span></p>
+            </div>
+
+            <div id="footer2">
+                <div class="row align-items" id="a1">
+                    <a href="">개인정보처리방침</a>
+                </div>
+                <div class="row align-items" id="a2">
+                    <a href="">이용약관</a>
+                </div>
+                <div class="row align-items" id="a3">
+                    <a href="">멤버십 약관</a>
+                </div>
+            </div>
+
+            <div id="footer3">
+                <img src="https://www.bbq.co.kr/images/common/ft_qr.gif" alt="">
+            </div>
+
+            <div id="footer4">
+                <div class="row align-items" id="footer4_img1">
+                    <a href=""><img src="https://www.bbq.co.kr/images/common/ft_appstore.gif" alt=""></a>
+                </div>
+                <div class="row align-items" id="footer4_img2">
+                    <a href=""><img src="https://www.bbq.co.kr/images/common/ft_googleplay.gif" alt=""></a>
+                </div>
+            </div>
+
+            <div id="footer5">
+                <div class="row justify-content">
+                    <div class="col" id="footer5_img1">
+                        <a href=""><img src="https://www.bbq.co.kr/images/common/btn_footer_sns_instagram.png" alt=""></a>
+                    </div>
+                    <div class="col" id="footer5_img2">
+                        <a href=""><img src="https://www.bbq.co.kr/images/common/btn_footer_sns_youtube.png" alt=""></a>
+                    </div>
+                </div>
+                <div id="footer5_img3">
+                    <a href=""><img src="https://www.bbq.co.kr/images/common/btn_footer_sns_blog.png" alt=""></a>
+                </div>
+            </div>
+        
+            <div id="footer6">
+                <p id="p3">&copy; 2019 GENESIS BBQ. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="container">
+      <button type="button" id="top" onclick="moveToTop()">↑</button>
+    </div>
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

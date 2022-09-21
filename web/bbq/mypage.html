@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mypage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="../JS/mypage.js"></script>
+    <link rel="stylesheet" href="../css/mypage.css">
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <nav class="py-2">
+        <div class="container d-flex flex-wrap" id="nav">
+            <ul class="nav me-auto" id="nav1">
+                <li class="nav-item" id="nav-item1"><a href="#" class="nav-link link-dark px-2 active" aria-current="page" id="active_nav" style="color: white;">비비큐치킨</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">비비큐 몰</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">닭익는마을</a></li>
+                <li class="nav-item"><a href=".html" class="nav-link link-dark px-2">우쿠야</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">올떡</a></li>
+                <li class="nav-item"><a href="tml" class="nav-link link-dark px-2">창업</a></li>
+            </ul>
+            <ul class="nav" id="nav2">
+                <li class="nav-item"><a href=".html" class="nav-link link-dark px-2">로그인</a></li>
+                <li class="nav-item"><a href=".html" class="nav-link link-dark px-2">회원가입</a></li>
+                <li class="nav-item"><a href="erinfo.html" class="nav-link link-dark px-2">고객센터</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="fixedNav">
+        <div id="nav_div1">
+            <a href="tml"><img src="https://www.bbq.co.kr/images/common/logo_header_bbq.png" alt=""></a>
+        </div>
+        <div class="btn-group">
+            <div id="btn-group1">
+                <p><img src="https://www.bbq.co.kr/images/common/popular_img01.png" alt="">&nbsp;&nbsp;실시간 인기</p>
+            </div>
+            <div id="btn-group2">
+                <a href="#" class="btn">1. 황금올리브치킨</a>
+            </div>
+        </div>
+        <div id="nav_div3">
+            <a href=""><button type="button" id="button_box">온라인 주문</button></a>
+        </div>
+        <div id="navFront1"></div>
+        <div id="navFront2"></div>
+        <div id="navMain">
+            <div id="main_nav">
+                <ul>
+                    <li><a href="#" id="nav_color">메뉴 소개</a></li>
+                    <li><a href="#" id="nav_color">매장 찾기</a></li>
+                    <li><a href="#" id="nav_color">브랜드</a></li>
+                    <li><a href="/bbq/home.html" id="nav_color">창업정보</a></li>
+                    <li><a href="#" id="nav_color">이벤트</a></li>
+                </ul>
+            </div>
+            
+            <div id="sub">
+                <div id="sub_menu">
+                    <ul class="menu">
+                        <li><a href="#" id="nav_color">수제맥주 세트</a></li>
+                        <li><a href="#" id="nav_color">신메뉴</a></li>
+                        <li><a href="#" id="nav_color">황올 시그니처</a></li>
+                        <li><a href="#" id="nav_color">1인분 메뉴</a></li>
+                        <li><a href="#" id="nav_color">황올한 양념</a></li>
+                        <li><a href="#" id="nav_color">황올한 구이</a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li><a href="#" id="nav_color">매장 찾기</a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li><a href="tory.html" id="nav_color">브랜드 스토리</a></li>
+                        <li><a href="#" id="nav_color">공지사항</a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li><a href="/bbq/home.html" id="nav_color">창업 정보</a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li><a href="#" id="nav_color">진행 중인 이벤트</a></li>
+                        <li><a href="#" id="nav_color">지난 이벤트</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bbqToMypage" >
+        <div class="container" id="inner_bbqToMypage">
+            <span>bbq home</span>
+            <span>마이페이지</span>
+        </div>
+    </div>
+
+    <div id="myPageContent" class="container">
+
+        <div class="">
+            <div id="maPageTitleArea"><span id="maPageTitle">마이페이지</span></div>
+            <div id="userTitleMenu">
+                <div id="hiUserArea" class="area">
+                    <div id="Ddack"><img src="../img/ddack.png" alt=""></div>
+                    <div id="hiUser">
+                        <span class="userName" id="userName">UserName</span> <span class="userName">님 안녕하세요!</span><br>
+                        <span id="weRbbq">세상에서 가장 건강하고 맛있는 치킨 bbq입니다. </span>
+                        <div id="hiUserBtn">
+                            <button id="userInfoChange" type="button">개인정보 변경</button>
+                            <button id="camp" type="button">치킨캠프 신청내역</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="pointArea" class="area" >
+                    <span>포인트</span>
+                    <img class="areaImg" src="../img/images/money.png" alt=""><br>
+                    <span class="amount">0p</span>
+                </div>
+                <div id="couponArea" class="area">
+                    <span>쿠폰</span>
+                    <img class="areaImg" src="../img/images/coupon.png" alt=""><br>
+                    <span class="amount">0장</span>
+                </div>
+                <div id="cardArea" class="area">
+                    <span>카드</span>
+                    <img class="areaImg" src="../img/images/card.png" alt=""><br>
+                    <span class="amount">1장</span>
+                </div>
+            </div>
+            <div id="userSubMenu">
+                <div class="frame" id="frame1"><span class="userDetailMenu" id="myOrder">주문내역</span></div>
+                <div class="frame"><span class="userDetailMenu" id="myCoupon">쿠폰</span></div>
+                <div class="frame"><span class="userDetailMenu" id="myPoint">포인트</span></div>
+                <div class="frame"><span class="userDetailMenu" id="myCard">카드</span></div>
+                <div class="frame"><span class="userDetailMenu" id="myAsk">문의내역</span></div>
+                <div class="frame"><span class="userDetailMenu" id="myMembership">딹 멤버십 안내</span></div> 
+            </div>
+            <div id="showMenuContent">
+                <div id="buylist">
+                    <div class="forLine" id="tabBuylist">
+                        <span class="showMenuContentTitle" id="nameBuylist">주문내역</span><br>
+                    </div>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"><span class="tableSapn">주문일/주문번호</span></th>
+                                    <th scope="col"><span class="tableSapn">상품정보</span></th>
+                                    <th scope="col"><span class="tableSapn">결제금액</span></th>
+                                    <th scope="col"><span class="tableSapn">주문방법</span></th>
+                                    <th scope="col"><span class="tableSapn">주문상태</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="listNone">
+                                    <td id="not" colspan="5"><span class="tableSapn" >주문내역이 없습니다. </span></td>
+                                </tr>
+                                <tr id="listExist">
+                                    <td><span class="tableSapn">샘플</span></td>
+                                    <td><span class="tableSapn">샘플</span></td>
+                                    <td><span class="tableSapn">sample</span></td>
+                                    <td><span class="tableSapn">sample</span></td>
+                                    <td><span class="tableSapn">sample</span></td>
+                                </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                
+                </div>
+                <div id="coupon">
+                    <div class="forLine">
+                        <div class="twoWrapper">
+                            <div><span class="showMenuContentTitle">쿠폰</span></div>
+                            <div class="textAlineRight">
+                                <span>사용 가능한 쿠폰</span><span id="couponNum">1</span>장</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"><span class="tableSapn">쿠폰명</span></th>
+                                    <th scope="col"><span class="tableSapn">유효시간</span></th>
+                                    <th scope="col"><span class="tableSapn">할인타입</span></th>
+                                    <th scope="col"><span class="tableSapn">사용유무</span></th>
+                                </tr>
+                            </thead>
+                            <tbody >
+                                <tr id="listNone">
+                                    <td id="not" colspan="5"><span class="tableSapn" >쿠폰내역이 없습니다. </span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tableSapn">샘플</span></td>
+                                    <td><span class="tableSapn">샘플</span></td>
+                                    <td><span class="tableSapn">sample</span></td>
+                                    <td><span class="tableSapn">sample</span></td>
+                                </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    
+                </div>
+                <div id="point">
+                    <div class="point"> 
+                        <span class="showMenuContentTitle">포인트</span><br>
+                    </div>
+                    
+                    <div id="usersPoint">
+                        <div id="vaildPoint">
+                            <span>사용가능 포인트</span><br>
+                            <span class="p">$P</span>
+                        </div>
+                        <div id="willExpirePoint">
+                            <span>소멸예정 포인트(2022-06-30 기준)</span><br>
+                            <span class="p">$P</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div id="savingPoint">
+                        <div>
+                            <span id="pointBsk">포인트 적립내역</span><br>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"><span class="tableSapn">적립/사용 내용</span></th>
+                                    <th scope="col"><span class="tableSapn">발생일자</span></th>
+                                    <th scope="col"><span class="tableSapn">적립포인트</span></th>
+                                    <th scope="col"><span class="tableSapn">사용포인트</span></th>
+                                    <th scope="col"><span class="tableSapn">소멸예정일</span></th>
+                                    <th scope="col"><span class="tableSapn">잔여포인트</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="listNone">
+                                    <td id="not" colspan="6"><span class="tableSapn" >쿠폰내역이 없습니다. </span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tableSapn">샘플</span></td>
+                                    <td><span class="tableSapn">샘플</span></td>
+                                    <td><span class="tableSapn">sample</span></td>
+                                    <td><span class="tableSapn">sample</span></td>
+                                    <td><span class="tableSapn">sample</span></td>
+                                    <td><span class="tableSapn">sample</span></td>
+                                </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <div id="card">
+                    <div id="cardTitle">
+                        <div class="forLine">
+                            <div class="twoWrapper">
+                                <div><span class="showMenuContentTitle">카드</span></div>
+                                <div class="textAlineRight">
+                                    <span>사용가능한 카드 </span><span id="cardNum">0</span><span>장</span>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    <div id="cardImg">
+                        <div class="cardRow">
+                            
+                            <div class="cardBorder" id="register">
+                                <div class="enterCard" id="plusBtn"><span>+</span></div>
+                                <span id="savedMoney">선물받은 카드를 등록하세요. </span>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div id="ask">
+                    <div class="forLine">
+                        <span class="showMenuContentTitle">문의내역</span><br>
+                    </div>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"><span class="tableSapn">번호</span></th>
+                                    <th scope="col"><span class="tableSapn">제목</span></th>
+                                    <th scope="col"><span class="tableSapn">작성일</span></th>
+                                    <th scope="col"><span class="tableSapn">조회</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="listNone">
+                                    <td id="not" colspan="5"><span class="tableSapn" >문의내역 없습니다. </span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="tableSapn">샘플</span></td>
+                                    <td><span class="tableSapn">샘플</span></td>
+                                    <td><span class="tableSapn">sample</span></td>
+                                    <td><span class="tableSapn">sample</span></td>
+                                </tr>
+                            </tbody>
+                          </table>
+                          <div><button type="button">문의하기</button></div>
+                    </div>
+
+                </div>
+                <div id="info">
+                    <div class="forLine">
+                        <span class="showMenuContentTitle">딹 멤버십 안내</span><br>
+                    </div>
+                    <div>
+                        <div class="ddackWrapper">
+                            <div class="ddackDIV">
+                                <div class="ddackImg"><img class="ddacks" src="../img/images/ddack1.png" alt=""></div>
+                                <div class="spanWrapper"><span id="ddackText1">멤버십회원의 혜택?</span></div>
+                            </div>
+                            <div class="ddackTexts">구매금액의 5% 포인트 적립/이벤트 및 쿠폰 등의 다양한 서비스를 제공 받으실 수 있습니다. </div>    
+                        </div>
+                        <div id="middle" class="ddackWrapper">
+                            <div class="ddackDIV" >
+                                <div class="ddackImg"><img class="ddacks" src="../img/images/ddack2.png" alt=""></div>
+                                <div class="spanWrapper"><span id="ddackText2">멤버십회원의 혜택?</span></div>
+                            </div>
+                            <div class="ddackTexts">BBQ 홈페이지 또는 모바일 앱에서 회원가입을 합니다. </div>
+                        </div>
+                        <div class="ddackWrapper">
+                            <div class="ddackDIV">
+                                <div class="ddackImg"><img class="ddacks" src="../img/images/ddack3.png" alt=""></div>
+                                <div class="spanWrapper"><span id="ddackText3">멤버십회원의 혜택?</span></div>
+                            </div>
+                            <div class="ddackTexts">
+                                <span>딹포인트는 BBQ홈페이지, BBQ앱으로 인입된 주문의 실 결제금액의 5%적립을 원칙으로 합니다. </span><br>
+                                <span>(단, 주류, 음료, 배달서비스 결제금액은 제외되며, 타 프로모션이나 할인행사와 중복적용은 제한됩니다)</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div id="ddackNotice">
+                        <span id="warning">유효기간은 적립일로부터 12개월 입니다. </span><br>
+                        <span>*포인트적립은 구매시점으로부터 최소 72시간 최대 1주일이내 적립됩니다(영업일기준)</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="yourContainer2">
+        <footer>
+            <div id="footer1">
+                <h5>주식회사 제너시스비비큐</h5>
+                <p id="p1"><span>주문번호 : </span><span>1588-9282&nbsp;&nbsp;</span>&nbsp;&nbsp;<span>고객센터 : </span><span>1588-9282&nbsp;&nbsp;</span>&nbsp;&nbsp;<span>창업문의 : </span><span>080-383-9000</span></p>
+                <p id="p2"><span>대표자 : 이승재&nbsp;&nbsp;</span><span>&nbsp;&nbsp;서울시 송파구 중대로 64(문정동)&nbsp;&nbsp;</span><span>&nbsp;&nbsp;통신판매업신고 : 2010-서울송파-1181호&nbsp;&nbsp;</span><span>&nbsp;&nbsp;사업자등록번호 : 207-81-43555</span></p>
+            </div>
+
+            <div id="footer2">
+                <div class="row align-items" id="a1">
+                    <a href="">개인정보처리방침</a>
+                </div>
+                <div class="row align-items" id="a2">
+                    <a href="">이용약관</a>
+                </div>
+                <div class="row align-items" id="a3">
+                    <a href="">멤버십 약관</a>
+                </div>
+            </div>
+
+            <div id="footer3">
+                <img src="https://www.bbq.co.kr/images/common/ft_qr.gif" alt="">
+            </div>
+
+            <div id="footer4">
+                <div class="row align-items" id="footer4_img1">
+                    <a href=""><img src="https://www.bbq.co.kr/images/common/ft_appstore.gif" alt=""></a>
+                </div>
+                <div class="row align-items" id="footer4_img2">
+                    <a href=""><img src="https://www.bbq.co.kr/images/common/ft_googleplay.gif" alt=""></a>
+                </div>
+            </div>
+
+            <div id="footer5">
+                <div class="row justify-content">
+                    <div class="col" id="footer5_img1">
+                        <a href=""><img src="https://www.bbq.co.kr/images/common/btn_footer_sns_instagram.png" alt=""></a>
+                    </div>
+                    <div class="col" id="footer5_img2">
+                        <a href=""><img src="https://www.bbq.co.kr/images/common/btn_footer_sns_youtube.png" alt=""></a>
+                    </div>
+                </div>
+                <div id="footer5_img3">
+                    <a href=""><img src="https://www.bbq.co.kr/images/common/btn_footer_sns_blog.png" alt=""></a>
+                </div>
+            </div>
+        
+            <div id="footer6">
+                <p id="p3">&copy; 2019 GENESIS BBQ. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <div class="container">
+        <button type="button" id="top" onclick="moveToTop()">↑</button>
+    </div>
+    <div class="btn-group-vertical quickMenu " role="group" aria-label="Vertical radio toggle button group" id="sideBtn">
+        <button type="button" id="grayBtn" class="side1">
+            <img src="https://www.bbq.co.kr/images/common/ico_quickmenu01.png" alt="" id="btnImg1">
+            <p>창업정보</p>
+        </button>
+
+        <button type="button" id="grayBtn">
+            <img src="https://www.bbq.co.kr/images/common/ico_quickmenu02.png" alt="" id="btnImg2">
+            <p>치킨캠프</p>
+        </button>
+
+        <button type="button" id="grayBtn">
+            <img src="https://www.bbq.co.kr/images/common/ico_quickmenu03.png" alt="">
+            <p>이벤트</p>
+        </button>
+
+        <button type="button" id="grayBtn" class="side4">
+            <img src="https://www.bbq.co.kr/images/common/ico_quickmenu04.png" alt="">
+            <p>e-쿠폰</p>
+        </button>
+    </div>
+
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/loginStatus.js"></script>
+
+    <script>
+        $.ajax({
+            url: "/bbqweb/login/session",
+            type: "GET",
+            success: function (loginInfo) {
+                setHeader(loginInfo);
+                
+            }
+        });
+
+        
+        //로그인된 경우에만 마이페이지에 접근할 수 있으므로
+        //해당 user의 정보를 가지고 온다
+        //user 이름 가지고 오기
+        $.ajax({
+            url:"/bbqweb/login/status",
+            type:"GET",
+            dataType:"text",
+            success: function(nthName){
+            	
+                if(nthName!=undefined){
+                    $("#userName").hide();
+                    $("#hiUser").prepend("<span className=\"userName\" id=\"userName\">" + nthName + "</span>");
+                    
+                  //카드관련 컬렉션 프레임워크 생성하기 
+                    $.ajax({
+                    	url: "/bbqweb/card",
+                    	type: "GET",
+                    	success: function(){	
+                    		
+                    		//카드 목록 조회하고 화면 구성하기 
+                    		$.ajax({
+            		        	url: "/bbqweb/card/check",
+            		        	type: "post",
+            		        	success: function(isCard){	
+            		        		let card = isCard.split(",");
+            		        		
+            		        		if(card[2]=="true"){
+            		        			$(".cardRow").prepend("<div class=\"cardBorder\" id=\"cardnone\">\n" +
+             		 	                       "                                <div class=\"enterCard\"><img id=\"bbqCard\" src=\"../img/cardImgs/card3.png\" alt=\"\"></div>\n" +
+             		 	                       "                                <span id=\"savedMoney\">펭수카드</span>\n" +
+             		 	                       "                            </div>")
+            		        		}
+            		        		if(card[1]=="true"){
+            		        			$(".cardRow").prepend("<div class=\"cardBorder\" id=\"cardnone\">\n" +
+             		 	                       "                                <div class=\"enterCard\"><img id=\"bbqCard\" src=\"../img/cardImgs/card2.png\" alt=\"\"></div>\n" +
+             		 	                       "                                <span id=\"savedMoney\">카카오페이</span>\n" +
+             		 	                       "                            </div>")
+            		        		}
+            		        		if(card[0]=="true"){
+            		        			$(".cardRow").prepend("<div class=\"cardBorder\" id=\"cardnone\">\n" +
+            		 	                       "                                <div class=\"enterCard\"><img id=\"bbqCard\" src=\"../img/cardImgs/card1.png\" alt=\"\"></div>\n" +
+            		 	                       "                                <span id=\"savedMoney\">현대카드</span>\n" +
+            		 	                       "                            </div>")
+            		        		}
+            		        		$(".cardRow").prepend("<div class=\"cardBorder\" id=\"cardnone\">\n" +
+         		 	                       "                                <div class=\"enterCard\"><img id=\"bbqCard\" src=\"../img/cardImgs/card0.png\" alt=\"\"></div>\n" +
+         		 	                       "                                <span id=\"savedMoney\">0</span>\n" +
+         		 	                       "                            </div>")
+            		        	},
+            		        	error: function(){
+            		        		alert("카드목록 조회 실패 ")
+            		        	}
+                    		})
+                    	},
+                    	error: function(){
+                    		alert("카드맵 생성 실패 ")
+                    	}
+                    })
+                }
+            },
+            error: function(){
+                alert("error")
+            }
+        });
+        
+        
+        let CardCodeNum
+        $("#plusBtn").on("click", function (){
+          CardCodeNum = prompt("카드 번호를 입력하세요.")
+          
+           $.ajax({
+                    	url: "/bbqweb/card",
+                    	type: "GET",
+                    	success: function(){
+                    		//카드 목록 조회하고 화면 구성하기 
+                    		$.ajax({
+            		        	url: "/bbqweb/card/check",
+            		        	type: "post",
+            		        	success: function(isCard){	
+            		        		let card = isCard.split(",");
+      
+         		 	                     $.ajax({
+         		 	        	           url: "/bbqweb/card/update",
+         		 	        	           type: "GET",
+         		 	        	           data: "cardCode="+CardCodeNum,
+         		 	        	           success: function(card){
+         		 	        	               if(card=="card1"){
+         		 	        	            	   
+         		 	        	                   $(".cardRow").prepend("<div class=\"cardBorder\" id=\"card1\">\n" +
+         		 	        	                       "                                <div class=\"enterCard\"><img id=\"bbqCard\" src=\"../img/cardImgs/card1.png\" alt=\"\"></div>\n" +
+         		 	        	                       "                                <span id=\"savedMoney\">현대카드</span>\n" +
+         		 	        	                       "                            </div>")
+         		 	        	               }else if(card=="card2"){
+         		 	        	            	   $(".cardRow").prepend("<div class=\"cardBorder\" id=\"card2\">\n" +
+         		 	        		                       "                                <div class=\"enterCard\"><img id=\"bbqCard\" src=\"../img/cardImgs/card2.png\" alt=\"\"></div>\n" +
+         		 	        		                       "                                <span id=\"savedMoney\">카카오페이</span>\n" +
+         		 	        		                       "                            </div>")
+         		 	        	               }else if(card=="card3"){
+         		 	        	            	   $(".cardRow").prepend("<div class=\"cardBorder\" id=\"card3\">\n" +
+         		 	        		                       "                                <div class=\"enterCard\"><img id=\"bbqCard\" src=\"../img/cardImgs/card3.png\" alt=\"\"></div>\n" +
+         		 	        		                       "                                <span id=\"savedMoney\">펭수카드</span>\n" +
+         		 	        		                       "                            </div>")
+         		 	        	               }else if(card=="full1"||card=="full2"||card=="full3"){
+         		 	        	            	  
+         		 	        	                   alert("이미 등록된 카드입니다. ")
+         		 	        	                   if(card=="full1"){
+         		 	        	                	   $("#card1")
+         		 	        	                   }
+         		 	        	               }else{
+         		 	        	            	 alert("등록되지 않은 카드번호입니다. ")
+         		 	        	               }
+         		 	             
+         		 	        	               
+         		 	        	           },error: function (){
+         		 	        	               alert("등록되지 않은 카드번호입니다. ")
+         		 	        	           }
+         		 	               		}) 
+            		        	},
+            		        	error: function(){
+            		        		alert("카드목록 조회 실패 ")
+            		        	}
+                    		})
+                    	}
+           })
+          
+			
+        })
+
+        
+        /*
+        //주문내역을 클릭했을 때 해당 정보를 가져와서 적절한 화면을 보여준다
+        $("#myOrder").on("click", function(){
+            $.ajax({
+                url:"/order/list",
+                type: "GET",
+                data: "userName",
+                dataType: "text",
+                success: function(JSON){
+                    if(주문내역이 있으면){
+                        $("#listNone").hide();
+                    }else{
+                        $("tbody").append("<tr id=\"listExist\">\n" +
+                                            "<td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "<td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "<td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "<td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "<td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "</tr>")
+                    }
+                },
+                error: function(){
+                }
+            });
+        })
+
+        //쿠폰을 클릭했을 때 해당 정보를 가져와서 적절한 화면을 보여준다
+        $("#myCoupon").on("click", function(){
+            $.ajax({
+                url:"/coupon",
+                type: "GET",
+                data: "userName",
+                dataType: "text",
+                success: function(JSON){
+                    if(주문내역이 있으면){
+                        $("#listNone").hide();
+                    }else{
+                        $("tbody").append("<tr>\n" +
+                                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "</tr>")
+                    }
+                },
+                error: function(){
+                }
+
+
+            });
+        })
+
+        //포인트를 클릭했을 때 해당 정보를 가져와서 적절한 화면을 보여준다
+        $("#myPoint").on("click", function(){
+            $.ajax({
+                url:"/point",
+                type: "GET",
+                data: "userName",
+                dataType: "text",
+                success: function(JSON){
+                    if(주문내역이 있으면){
+                        $("#listNone").hide();
+                    }else{
+                        $("tbody").append("<tr>\n" +
+                                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                                            "</tr>")
+                    }
+                },
+                error: function(){
+                }
+            });
+        })
+
+        //카드를 클릭했을 때 해당 정보를 가져와서 적절한 화면을 보여준다
+        $("#myCard").on("click", function(){
+            $.ajax({
+                url:"/bbqweb/card",
+                type: "GET",
+                data: "userName",
+                dataType: "text",
+                success: function(JSON){
+                    if(주문내역이 있으면){
+                        $("#listNone").hide();
+                    }else{
+                        $("tbody").append("<tr id=\"listExist\">\n" +
+                            "                            <td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "                            <td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "                            <td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "                            <td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "                            <td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "                        </tr>")
+                    }
+                },
+                error: function(){
+                }
+            });
+        })
+
+        
+        //포인트 네모박스를 클릭했을 때 해당 정보를 가져와서 적절한 화면을 보여준다
+        $("#pointArea").on("click", function(){
+            $.ajax({
+                url:"/point",
+                type: "GET",
+                data: "userName",
+                dataType: "text",
+                success: function(JSON){
+                    if(주문내역이 있으면){
+                        $("#listNone").hide();
+                    }else{
+                        $("tbody").append("<tr>\n" +
+                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "</tr>")
+                    }
+                },
+                error: function(){
+                }
+
+
+            });
+        })
+
+        //쿠폰 네모박스를 클릭했을 때 해당 정보를 가져와서 적절한 화면을 보여준다
+        $("#couponArea").on("click", function(){
+            $.ajax({
+                url:"/coupon",
+                type: "GET",
+                data: "userName",
+                dataType: "text",
+                success: function(JSON){
+                    if(주문내역이 있으면){
+                        $("#listNone").hide();
+                    }else{
+                        $("tbody").append("<tr>\n" +
+                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "<td><span class=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "</tr>")
+                    }
+                },
+                error: function(){
+                }
+            });
+        })
+
+        //카드네모박스를 클릭했을 때 해당 정보를 가져와서 적절한 화면을 보여준다
+        $("#cardArea").on("click", function(){
+            $.ajax({
+                url:"/card",
+                type: "GET",
+                data: "userName",
+                dataType: "text",
+                success: function(JSON){
+                    if(주문내역이 있으면){
+                        $("#listNone").hide();
+                    }else{
+                        $("tbody").append("<tr id=\"listExist\">\n" +
+                            "                            <td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "                            <td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "                            <td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "                            <td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "                            <td><span className=\"tableSapn\">" + 샘플 + "</span></td>\n" +
+                            "                        </tr>")
+                    }
+                },
+                error: function(){
+                }
+            });
+        })
+
+
+         */
+         
+
+
+
+        $("#bbqCard").on("mouseenter", function (){
+            $("#bbqCard").css("background-color", "rgba(0, 0, 0, 0.5)");
+            $("#bbqCard").css("cursor", "pointer");
+
+
+        })
+    </script>
+</body>
+
+</html>

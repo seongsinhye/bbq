@@ -1,0 +1,139 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header_img {
+    text-align: center;
+    padding: 50px;
+}
+
+#header_img img {
+    width: 80px;
+}
+
+input[type="email"], input[type="password"], input[type="submit"], button {
+    width: 300px;
+    border-radius: 0px;
+}
+
+.form-floating, #signIn {
+    color: rgb(155, 155, 155);
+    font-size: 10pt;
+    padding:5px;
+    font-weight: bold;
+    margin-left: 500px;
+}
+
+#input .form-control, input[type="submit"], button {
+    height: 40px;
+}
+
+#label_setID, #label_maintainID {
+    padding: 10px 0px;
+    font-size: 10pt;
+}
+
+#setYourID {
+    transform: translateX(505px);
+    float: left;
+}
+
+#maintain {
+    transform: translateX(600px);
+}
+
+#signIn_button {
+    color: white;
+    background-color: rgb(204, 53, 53);
+    height: 50px;
+    font-size: 11pt;
+    font-weight: bold;
+    border: none;
+}
+
+#findORsignup {
+    margin-left: 500px;
+}
+
+#findORsignup div {
+    border-left: solid 1px rgb(155, 155, 155);
+    float: left;
+    margin-top: 30px;
+}
+
+#findORsignup a {
+    color: black;
+    text-decoration: none;
+    font-size: 10pt;
+    margin: 0px 16px;
+}
+
+#findID {
+    border: none !important;
+}
+
+#hr {
+    color: rgb(155, 155, 155);
+    font-size: 8pt;
+    margin-left: 500px;
+    clear: both;
+}
+
+hr {
+    width: 140px;
+}
+
+#fir_hr, #or {
+    float: left;
+}
+
+#fir_hr {
+    transform: translateY(21px);
+}
+
+#or {
+    margin-top: 30px;
+}
+
+#last_hr {
+    transform: translateY(36px);
+}
+
+#SNSmaintain {
+    clear: both;
+    margin-left: 500px;
+}
+
+#SNS_signIn {
+    margin-left: 500px;
+}
+
+.SNS_signIn {
+    margin-bottom: 10px;
+}
+
+.SNS_signIn button {
+    background-color: white;
+    border: 1px solid black;
+    height: 50px;
+}
+
+#facebook, #payco, #apple {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+#kakao {
+    color: rgb(255, 230, 0);
+    font-size: 14pt;
+}
+
+#facebook {
+    color: rgb(64, 74, 167);
+}
+
+#payco {
+    color: red;
+}

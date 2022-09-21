@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/signUp.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../JS/signUp.js"></script>
+</head>
+<body class="container">
+    <div id="header_img">
+        <a href="tml"><img src="https://www.bbq.co.kr/images/common/logo_header_bbq.png" alt=""></a>
+    </div>
+
+    <div id="step">
+        <div id="step1">
+            <p>1</p>
+        </div>
+        <div id="fir_hr">
+            <hr>
+        </div>
+        <div id="step2">
+            <p>2</p>
+        </div>
+        <div id="last_hr">
+            <hr>
+        </div>
+        <div id="step3">
+            <p>3</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step1">
+            <p>약관 동의 및</p>
+            <p class="step1_p2">본인 인증</p>
+        </div>
+        <div class="step2">
+            <p>회원 정보 입력</p>
+        </div>
+        <div class="step3">
+            <p>가입 완료</p>
+        </div>
+    </div>
+
+    <div class="yourCheck">
+        <div class="checkAll">
+            <input type="checkbox" name="check" id="checkAll">
+            <label for="checkAll">아래 내용에 모두 동의합니다.</label>
+        </div>
+        <div id="div_check">
+            <div>
+                <div id="see1">
+                    <a href="">전문 보기</a>
+                </div>
+                <div class="inquire">
+                    <input type="checkbox" name="check" id="inquire" class="check">
+                    <label for="inquire">&nbsp;BBQ 이용 약관</label>
+                </div>
+            </div>
+            <div>
+                <div id="see2">
+                    <a href="">전문 보기</a>
+                </div>
+                <div class="usingInfo1">
+                    <input type="checkbox" name="check" id="usingInfo1" class="check">
+                    <label for="usingInfo1">&nbsp;개인 정보 수집과 이용</label>
+                </div>
+            </div>
+            <div>
+                <div id="see3">
+                    <a href="">전문 보기</a>
+                </div>
+                <div class="usingInfo2">
+                    <input type="checkbox" name="check" id="usingInfo2" class="check">
+                    <label for="usingInfo2">&nbsp;개인정보 제3자 제공</label>
+                </div>
+            </div>
+            <div class="over13">
+                <input type="checkbox" name="check" id="over13" class="check">
+                <label for="over13">&nbsp;만 14세 이상입니다.</label>
+            </div>
+            <div class="select">
+                <input type="checkbox" name="check" id="select" class="check">
+                <label for="select">&nbsp;홍보성 정보 수신 동의(선택)</label>
+            </div>
+        </div>
+    </div>
+
+    <div id="p">
+        <p>회원 가입 및 본인확인을 위한 인증절차를 진행해 주세요.</p>
+    </div>
+
+    <div>
+        <div id="confirmation">
+            <button type="submit" id="confirmation_button">휴대폰 인증</button>
+        </div>
+    </div>
+
+    <script>
+        $("#confirmation_button").on("click", function () {
+            let inquire = $("#inquire").is(":checked");
+            let usingInfo1 = $("#usingInfo1").is(":checked");
+            let usingInfo2 = $("#usingInfo2").is(":checked");
+            let over13 = $("#over13").is(":checked");
+
+            if (inquire && usingInfo1 && usingInfo2 && over13) {
+                location.href="/bbqweb/bbq/checkPhone.html";
+            } else {
+                alert("필수 체크 사항에 동의 해주세요.");
+            }
+        });
+    </script>
+</body>
+</html>

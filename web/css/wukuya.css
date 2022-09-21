@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+}
+body{
+    min-width: 1420px;
+    position: relative;
+}
+header{
+    position: relative;
+    z-index: 999;
+}
+.container{
+    padding: 0px 60px 0px 60px;
+}
+#center{
+    text-align: center;
+}
+
+
+
+/*상단네비1*/
+#brand1,#brand2,#brand3,#brand4{
+    color: #afafaf;
+    opacity: 0.5;
+    margin-left:  10px;
+    margin-right: 10px;
+}
+
+#login, #signUp{
+    color: #afafaf;
+    margin-left:  10px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+a#login.nav-link.link-dark.px-2,a#signUp.nav-link.link-dark.px-2{
+    margin-top: 3px;
+    height: 40px;
+}
+
+#brand1:hover,#brand2:hover,#brand3:hover,#brand4:hover{
+    color: white;
+}
+.border-bottom{
+    border-bottom: 0!important;
+}
+.py-2{
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+}
+.bg-light{
+    background-color: rgb(18, 18, 18)!important;
+}
+
+div.container.d-flex.flex-wrap{
+    padding: 0px 40px 0px 40px!important;
+}
+li.nav-item{
+    height: 40px;
+}
+
+
+
+/*상단 네비2*/
+.nav-link{
+color: black;
+letter-spacing: -1px;
+}
+#menu0,#menu1,#menu2,#menu3,#menu4,#menu5{
+font-size: 20px;
+}
+
+#visitors{
+padding-right: 16px;
+color: rgb(201, 2, 2);
+font-size: 18px;
+transform: translateY(-15px);
+}
+#visitors i{
+color: black;
+font-size: 30px;
+padding-right: 5px;
+}
+.py-3{
+padding-top: 7px!important;
+padding-bottom: 7px!important;
+border-top: solid;
+border-top-color: rgb(188, 5, 5);
+border-bottom: solid #afafaf 1px;
+
+}
+a#menu1.nav-link,a#menu2.nav-link,a#menu3.nav-link,a#menu4.nav-link,a#menu5.nav-link{
+    text-align: right!important;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    width: 215px;
+    font-size: 18px;
+    height: 43px;
+    width: auto;
+    
+}
+#main_nav5,#main_nav4,#main_nav3,#main_nav2,#main_nav1{
+    width: 215px;
+    text-align: right;
+}
+
+li#visitors.nav-item{
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+div.container{
+    padding: 0px 0px 0px 60px!important;
+}
+
+i.bi.bi-people::before,i.bi.bi-people{
+    transform: translateY(3.5px);
+}
+
+a {
+text-decoration: none;
+color: black;
+}
+a:hover{
+color: rgb(201, 2, 2);
+}
+.nav-link:focus, .nav-link:hover{
+color: rgb(201, 2, 2);
+}
+#px{
+    width: 1200px;
+}
+#nav{
+    width: 1200px;
+}
+
+
+/*서브바*/
+ul#menuList1.menu,ul#menuList2.menu,ul#menuList3.menu,ul#menuList4.menu{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#sub_menu{
+    display: grid;
+    grid-template-columns: 341px 76px 137px 83px 132px 88px 127px 108px 108px;
+    text-align: center;
+}
+
+
+
+
+/*사진구역*/
+div#center.container{
+    padding: 0px 60px 0px 60px!important;
+}
+
+/*우쿠야 우동그릇사진 구역*/
+#wukuyaImg{
+    border-radius: 10px;
+    width: 100%;
+    border: solid 1px;
+    border-color: rgb(207, 206, 206);
+    
+}
+#promise{
+    margin: 80px 0px 60px 0px;
+}
+
+
+
+
+/*사진 3개 구역*/
+#imgArea{
+    margin-bottom: 80px;
+    column-count: 3;
+    width: 100%;
+}
+
+
+
+/*우쿠야만의 매력 부분*/
+.yellow{
+    display: inline-block;
+    margin-top: -2px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 3px solid #ffcf3f;
+    font-size: 22px;
+    line-height: 30px;
+    color: #111;
+    letter-spacing: -1px;
+    font-weight: bold ;
+}
+.title{
+    color: #111;
+    letter-spacing: -1px;
+    font-weight: bold ;
+    font-size: 22px;
+}
+[id=yellowTop1]{
+    border-top: rgb(207, 206, 206) solid 1px ;
+    width: 1200px;
+    margin-bottom: 60px;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.imgAndText{
+    display: grid;
+    grid-template-columns: 300px 1fr;  
+    padding: 25px 0px 25px 0px;
+}
+
+div#yellowTop1.container,div#yellowTop2.container{
+    padding-left: 0px!important;
+}
+
+
+/*투자비(표)*/
+[id=yellowTop2]{
+    border-top: rgb(207, 206, 206) solid 1px ;
+    width: 1200px;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    margin-bottom: 60px;
+}
+.table{
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+}
+.thead td{
+    background-color: #DDDDDD;
+
+}
+.table td{
+    padding: 15px 20px 15px 20px;
+    text-align: center;
+
+}
+.tbody td{
+    background-color: #EEEEEE;
+}
+#texts{
+    color: #fff;
+    text-align: center;
+}
+
+#list1,#list2,#list3 {
+    transform: translateY(-12.5px);
+}
+#list4{
+    transform: translateY(70px);
+}
+#list5{
+    transform: translateY(300px);
+}
+#list6{
+    transform: translateY(70px);
+}
+#money{
+    text-align: right;
+    margin: 0px;
+    margin-right: 10px;
+}
+.notice{
+    margin-left: 10px;
+}
+
+.cell{
+    font-weight: bold;
+}
+
+
+/*버튼*/
+#button{
+    text-align: center;
+}
+#click_button {
+    cursor: pointer;
+}
+.btn-red {
+    color: #ffffff !important;
+    border: 1px solid #e31937;
+    background-color: #e31937;
+    height: 40px;
+    width: 160px;
+
+}
+#love{
+    transform: translate(100px, -55px)
+}
+
+
+
+/*푸터*/
+#socialArea{
+    font-size: 30px;
+    text-align: right;
+}
+#iconArea{
+    column-count: 2;
+}
+#copy{
+    margin-top: 10px;
+    margin-bottom: 0rem;
+}
+.footerNav{
+    margin-left: 150px;
+    padding: 0;
+    
+}
+footer#footer{
+    padding-top: 10px;
+}
+#footer{
+    border-top: none;
+}
+footer{
+background-color: #272626;
+padding: 0px!important;
+
+}
+#footerContent{
+    color: #acacac;
+
+
+}
+
+#footer{
+margin: 0px!important;
+padding: 0px!important
+}
+hr{
+    color: #eaeaea;
+    margin-top: 0!important;
+}
+#bottomfooter{
+    text-align: center;
+}
+ul.container{
+    padding-bottom: 10px!important;
+    padding-top: 10px!important;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#bbq{
+    padding: 10px 0px 10px 0px;
+    
+}
+.text-muted:hover{
+    color: white;
+}
+#imgbbq{
+    width: 70px!important;
+}
+#footerNav{
+    transform: translateY(50px);
+}
+.text-muted{
+    color: white!important;
+}
+#footer a {
+    color: #a3a3a3c7;
+    font-size: 18px;
+    text-decoration: none;
+}
+#footer a:hover{
+    color: white!important;
+}
+#footerNav1,#footerNav2,#footerNav3,#footerNav4{
+    color: white!important;
+}
+
+#yourContainer1 .col-2{
+    height: 24px;
+    text-align: center;
+}
+#yourContainer1 .col-3{
+    height: 24px;
+text-align: center;
+}
+#ddack{
+    transform: translateY(-6px);
+}
+#navigator{
+    display:grid;
+    grid-template-columns: 1fr 1.3fr 0.65fr 1fr 3fr;
+}
+
+#navigator a{
+    color: white;
+    font-size: 15px!important;
+}
+p#copy{
+    padding-bottom: 20px;
+}
+#button{
+    margin-bottom: 30px;
+}
+#socialArea{
+    color:rgb(150, 150, 150)
+}
+ul#NAV.container{
+    padding: 10px 60px 0px 60px!important;
+}
+li.nav-item{
+    text-align: left;
+}
+li.nav-item.px2{
+    text-align: center!important;
+}
+#firstFooter li{
+    text-align: center;
+}
+
+
+/*사이드바*/
+.leftMenu{
+    position: fixed;
+    left: 19px;
+    top: 180px;
+}.quick{
+    font-size: 30px;
+}
+#quick1{
+    position: fixed;
+    right: 19px;
+    top: 180px;
+    width: 110px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+#quick2{
+    position: fixed;
+    right: 19px;
+    top: 298px;
+    width: 110px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}   
+
+
+
+
+/*스크롤업*/
+#top {
+    background-color: white;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-size: 15pt;
+    font-weight: bold;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+
+
+/*드롭다운*/
+
+
+/*
+header.d-flex.justify-content-center.py-3{
+    justify-content: left!important;
+}
+*/
+#nav{
+    position: releative;
+}
+#sub{
+    background-color: #ffffffdd;
+    width: 2500px;
+    transform: translate(-500px, 8px);
+    position: absolute;
+}
+#sub_menu{
+    transform: translate(505px, 30px);
+    height: 412px;
+    z-index: 999;
+}
+.menu li{
+    padding: 10px 0px 10px 0px;
+    font-weight: bold;
+    
+}
+.menu li a{
+    color: #484747;
+}
+.menu li a:hover{
+    color: rgb(201, 2, 2);
+}
+
+.fixIt {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+}

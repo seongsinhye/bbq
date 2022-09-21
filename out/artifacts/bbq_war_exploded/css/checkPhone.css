@@ -1,0 +1,50 @@
+#header_img img {
+    margin: 50px !important;
+}
+
+.check {
+    margin: 5px 493px;
+}
+
+.check input {
+    font-size: 10pt;
+    width: 300px;
+    margin: 7px;
+}
+
+.check input {
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 0px;
+    padding: 10px;
+}
+
+#phone_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 200px !important;
+}
+
+#phone_div input {
+    width: 185px;
+    padding: 0px 10px !important;
+    height: 41px;
+}
+
+#phone_div button {
+    color: white;
+    background-color: rgb(59, 55, 55);
+    border: none;
+    padding: 10px;
+    width: 110px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+#button {
+    height: 41px;
+    margin: 8px 0px;
+}
+
+#confirmation {
+    margin: 20px 493px;
+}

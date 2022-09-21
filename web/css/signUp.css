@@ -1,0 +1,148 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header_img {
+    text-align: center;
+    padding: 50px;
+}
+
+#header_img img {
+    width: 80px;
+}
+
+#step1, #step2, #step3, #fir_hr, #last_hr {
+    float: left;
+    font-size: 10pt;
+}
+
+#fir_hr, #last_hr {
+    width: 80px;
+    transform: translateY(4px);
+}
+
+#step1 {
+    border: 1px solid rgb(68, 68, 68);
+    background-color: rgb(68, 68, 68);
+    color: white;
+    margin-left: 500px;
+}
+
+#step2, #step3 {
+    border: 1px solid rgb(235, 235, 235);
+    background-color: rgb(235, 235, 235);
+    color: rgb(146, 146, 146);
+}
+
+#step1, #step2, #step3 {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+#step p {
+    margin-bottom: 0px;
+    padding: 10px 7px 14px 15px;
+}
+
+.step {
+    clear: both;
+    font-size: 8pt;
+    padding-top: 10px;
+    transform: translateX(-7px);
+}
+
+.step1 {
+    margin-left: 500px;
+}
+
+.step1_p2 {
+    text-align: center;
+    transform: translateY(-15px);
+}
+
+.step2 {
+    padding: 0px 60px 0px 55px;
+}
+
+.step2, .step3 {
+    color: rgb(146, 146, 146);
+}
+
+.step1, .step2, .step3 {
+    float: left;
+}
+
+.yourCheck {
+    clear: both;
+    margin-left: 505px;
+    font-size: 10pt;
+}
+
+.yourCheck a {
+    color: rgb(102, 102, 102);
+    font-size: 8pt;
+}
+
+.checkAll {
+    font-weight: bold;
+}
+
+.select {
+    color: black;
+}
+
+.yourCheck div {
+    padding: 5px;
+}
+
+#div_check {
+    border: solid 1px rgb(248, 248, 248);
+    background-color: rgb(248, 248, 248);
+    color: rgb(75, 75, 75);
+    width: 300px;
+}
+
+.inquire, .usingInfo1, .usingInfo2 {
+    float: left;
+    transform: translateX(-6px);
+}
+
+#see1, #see2, #see3 {
+    float: right;
+}
+
+#see2, #see3 {
+    clear: both;
+}
+
+.over13 {
+    clear: both;
+}
+
+#p {
+    margin-left: 500px;
+    font-size: 8pt;
+    padding-top: 50px;
+    transform: translateX(20px);
+}
+
+#confirmation {
+    color: rgb(155, 155, 155);
+    font-size: 10pt;
+    padding:5px;
+    font-weight: bold;
+    margin-left: 500px;
+}
+
+#confirmation_button {
+    color: white;
+    background-color: rgb(204, 53, 53);
+    height: 50px;
+    width: 300px;
+    font-size: 11pt;
+    font-weight: bold;
+    border: none;
+}

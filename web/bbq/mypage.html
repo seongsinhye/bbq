@@ -432,11 +432,28 @@
 
     <script>
         $.ajax({
-            url: "/bbqweb/login/session",
+            url: "/bbq/bbq/login/session",
             type: "GET",
             success: function (loginInfo) {
-                setHeader(loginInfo);
-                
+                if (loginInfo != null) {
+                    $("#nav2 li").remove();
+
+                    $("#nav2").append("<li class=\"nav-item\"><a href=\"/bbq/bbq/logout\" class=\"nav-link link-dark px-2\" id=\"logout\">로그아웃</a></li><li class=\"nav-item\"><a href=\"/bbq/bbq/mypage.html\" class=\"nav-link link-dark px-2\">마이페이지</a></li><li class=\"nav-item\"><a href=\"../bbq/customerinfo.html\" class=\"nav-link link-dark px-2\">고객센터</a></li>");
+
+                    $("#logout").on("click", function () {
+                        location.href = "/bbq/bbq/logout";
+                    });
+
+
+                } else{
+
+                }
+
+
+            },
+            error: function(){
+                alert("네비 로그아웃 버튼 생성에 오류 생김 ")
+
             }
         });
 
@@ -445,24 +462,24 @@
         //해당 user의 정보를 가지고 온다
         //user 이름 가지고 오기
         $.ajax({
-            url:"/bbqweb/login/status",
+            url:"/bbq/bbq/login/session",
             type:"GET",
             dataType:"text",
-            success: function(nthName){
+            success: function(loginInfo){
             	
-                if(nthName!=undefined){
-                    $("#userName").hide();
-                    $("#hiUser").prepend("<span className=\"userName\" id=\"userName\">" + nthName + "</span>");
+                if(loginInfo!=null){
+                    // $("#userName").hide();
+                    // $("#hiUser").prepend("<span className=\"userName\" id=\"userName\">" + nthName + "</span>");
                     
                   //카드관련 컬렉션 프레임워크 생성하기 
                     $.ajax({
-                    	url: "/bbqweb/card",
+                    	url: "/bbq/bbq/card",
                     	type: "GET",
                     	success: function(){	
                     		
                     		//카드 목록 조회하고 화면 구성하기 
                     		$.ajax({
-            		        	url: "/bbqweb/card/check",
+            		        	url: "/bbq/bbq/card/check",
             		        	type: "post",
             		        	success: function(isCard){	
             		        		let card = isCard.split(",");
@@ -512,18 +529,18 @@
           CardCodeNum = prompt("카드 번호를 입력하세요.")
           
            $.ajax({
-                    	url: "/bbqweb/card",
+                    	url: "/bbq/bbq/card",
                     	type: "GET",
                     	success: function(){
                     		//카드 목록 조회하고 화면 구성하기 
                     		$.ajax({
-            		        	url: "/bbqweb/card/check",
+            		        	url: "/bbq/bbq/card/check",
             		        	type: "post",
             		        	success: function(isCard){	
             		        		let card = isCard.split(",");
       
          		 	                     $.ajax({
-         		 	        	           url: "/bbqweb/card/update",
+         		 	        	           url: "/bbq/bbq/card/update",
          		 	        	           type: "GET",
          		 	        	           data: "cardCode="+CardCodeNum,
          		 	        	           success: function(card){

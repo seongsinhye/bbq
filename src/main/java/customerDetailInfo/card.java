@@ -1,4 +1,4 @@
-package customerDetailInfo;
+package main.java.customerDetailInfo;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -9,10 +9,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@WebServlet(urlPatterns = {"/card"})
+@WebServlet("/bbq/card")
 public class card extends HttpServlet {
 
-    public static Map<String, CardInfo> UserCardList = new HashMap<>();
+    public static Map<String, customerDetailInfo.CardInfo> UserCardList = new HashMap<>();
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -43,7 +43,7 @@ public class card extends HttpServlet {
         String card2 = (String)session.getAttribute("card2");
         String card3 = (String)session.getAttribute("card3");
         
-        CardInfo newCardInfo = new CardInfo(card1, card2, card3);
+        customerDetailInfo.CardInfo newCardInfo = new customerDetailInfo.CardInfo(card1, card2, card3);
         UserCardList.put(nthName, newCardInfo);
         
         

@@ -10,7 +10,7 @@ import java.util.Map;
 @WebServlet("/coupon")
 public class coupon extends HttpServlet {
 
-    public static Map<String, CouponInfo> UserCouponList = new HashMap<>();
+    public static Map<String, customerDetailInfo.CouponInfo> UserCouponList = new HashMap<>();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

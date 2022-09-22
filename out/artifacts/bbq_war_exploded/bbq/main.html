@@ -20,7 +20,7 @@
     <nav class="py-2">
         <div class="container d-flex flex-wrap" id="nav">
             <ul class="nav me-auto" id="nav1">
-                <li class="nav-item" id="nav-item1"><a href="#" class="nav-link link-dark px-2 active" aria-current="page" id="active_nav" style="color: white;">비비큐치킨</a></li>
+                <li class="nav-item" id="nav-item1"><a href="/bbq/bbq/main.html" class="nav-link link-dark px-2 active" aria-current="page" id="active_nav" style="color: white;">비비큐치킨</a></li>
                 <li class="nav-item"><a href="#" class="nav-link link-dark px-2">비비큐 몰</a></li>
                 <li class="nav-item"><a href="#" class="nav-link link-dark px-2">닭익는마을</a></li>
                 <li class="nav-item"><a href="#" class="nav-link link-dark px-2">우쿠야</a></li>
@@ -208,7 +208,7 @@
         <button type="button" id="top" onclick="moveToTop()">↑</button>
     </div>
 
-    <div class="btn-group-vertical quickMenu " role="group" aria-label="Vertical radio toggle button group" id="sideBtn">
+    <div class="btn-group-vertical quickMenu " role="group" aria-label="Vertical radio toggle button group" id="sideBtn" style="z-index: 1;">
         <button type="button" id="grayBtn" class="side1">
             <img src="https://www.bbq.co.kr/images/common/ico_quickmenu01.png" alt="" id="btnImg1">
             <p>창업정보</p>
@@ -230,14 +230,35 @@
         </button>
     </div>
 
-    <script src="../JS/loginStatus.js"></script>
+<script src="/JS/jquery-3.6.0.min.js"></script>
     <script>
+
+
         $.ajax({
-            url: "/bbqweb/login/session",
+            url: "/bbq/bbq/login/session",
             type: "GET",
             success: function (loginInfo) {
-                setHeader(loginInfo);
-            }
+
+                if (loginInfo != null) {
+                    $("#nav2 li").remove();
+
+                    $("#nav2").append("<li class=\"nav-item\"><a href=\"/bbq/bbq/logout\" class=\"nav-link link-dark px-2\" id=\"logout\">로그아웃</a></li><li class=\"nav-item\"><a href=\"/bbq/bbq/mypage.html\" class=\"nav-link link-dark px-2\">마이페이지</a></li><li class=\"nav-item\"><a href=\"../bbq/customerinfo.html\" class=\"nav-link link-dark px-2\">고객센터</a></li>");
+
+                    $("#logout").on("click", function () {
+                        location.href = "/bbq/bbq/logout";
+                    });
+
+
+                } else{
+
+                }
+
+
+            },
+                error: function(){
+
+
+                }
         });
     </script>
 </body>

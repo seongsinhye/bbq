@@ -7,6 +7,8 @@ public class Info {
     private String phone;
     private String email;
 
+    public Info(){}
+
     public Info(String id, String pw, String email, String name, String phone) {
         this.id = id;
         this.pw = pw;
@@ -14,6 +16,7 @@ public class Info {
         this.name = name;
         this.phone = phone;
     }
+
 
     public Info(String name, String phone) {
         this.name = name;

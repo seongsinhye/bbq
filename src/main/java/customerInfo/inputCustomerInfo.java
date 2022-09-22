@@ -1,5 +1,6 @@
 package customerInfo;
 
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -10,7 +11,7 @@ import java.util.List;
 
 @WebServlet(name = "inputCustomerInfo", value = "/input/customer/info")
 public class inputCustomerInfo extends HttpServlet {
-    public  static List<Info> customerInfoList = new ArrayList<>();
+    public  static List<customerInfo.Info> customerInfoList = new ArrayList<>();
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
@@ -105,7 +106,7 @@ public class inputCustomerInfo extends HttpServlet {
                         output.print(text);
                         output.close();
                     } else {
-                        for (Info nthInfo : inputCustomerInfo.customerInfoList) {
+                        for (customerInfo.Info nthInfo : inputCustomerInfo.customerInfoList) {
                             String getEmail = nthInfo.getEmail();
                             String getID = nthInfo.getId();
 
@@ -126,7 +127,7 @@ public class inputCustomerInfo extends HttpServlet {
                                     output.print(text);
                                     output.close();
                                 } else {
-                                    Info newInfo = new Info(id, pw, email, name, phone);
+                                    customerInfo.Info newInfo = new customerInfo.Info(id, pw, email, name, phone);
                                     customerInfoList.add(newInfo);
 
                                     response.setContentType("application/json;charset=UTF-8");

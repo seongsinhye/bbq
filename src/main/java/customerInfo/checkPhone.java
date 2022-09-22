@@ -1,4 +1,6 @@
-package customerInfo;
+package main.java.customerInfo;
+
+
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -11,7 +13,7 @@ import java.util.Random;
 
 @WebServlet(name = "checkPhone", value = "/check/phone")
 public class checkPhone extends HttpServlet {
-    public  static List<Info> nameNphoneList = new ArrayList<>();
+    public  static List<customerInfo.Info> nameNphoneList = new ArrayList<>();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -20,13 +22,13 @@ public class checkPhone extends HttpServlet {
 
         boolean isExist = false;
 
-        for (Info nthInfo : nameNphoneList) {
+        for (customerInfo.Info nthInfo : nameNphoneList) {
             String nthPhone = nthInfo.getPhone();
 
             if (phone.equals(nthPhone)) {
                 isExist = true;
             } else {
-                Info newInfo = new Info(name, phone);
+                customerInfo.Info newInfo = new customerInfo.Info(name, phone);
                 nameNphoneList.add(newInfo);
             }
         }

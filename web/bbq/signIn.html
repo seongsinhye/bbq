@@ -93,12 +93,13 @@
             let pw = $("#floatingPassword").val();
 
             $.ajax ({
-                url: "/bbqweb/sign/in",
+                url: "/bbq/bbq/sign/in",
                 type: "POST",
                 data: "id="+id+"&pw="+pw,
-                success: function (json) {
-                    alert(json.nthName + "님, 로그인 되었습니다.");
-                    location.href="/bbqweb/bbq/main.html";
+                success: function () {
+                    alert("환영합니다 !! ")
+
+                    location.href="/bbq/bbq/main.html";
                 },
                 error: function () {
                     alert("아이디 또는 비밀번호가 틀렸습니다.");

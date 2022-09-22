@@ -1,4 +1,4 @@
-package customerInfo;
+package main.java.customerInfo;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -6,19 +6,27 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "loginSession", value = "/login/session")
+@WebServlet("/bbq/login/session")
 public class loginSession extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        String loginInfo = (String) session.getAttribute("loginInfo");
+        customerInfo.Info loginInfo = (customerInfo.Info) session.getAttribute("loginInfo");
 
-        if (loginInfo == null) {
-            response.setStatus(HttpServletResponse.SC_NO_CONTENT);
+
+        response.setContentType("text/html;charset=UTF-8");
+        PrintWriter out = response.getWriter();
+
+        if (loginInfo != null) {
+
+            out.print(loginInfo);
+
         } else {
-            PrintWriter ouput = response.getWriter();
-            ouput.print(loginInfo);
-            ouput.close();
+            response.setStatus(409);
         }
+
+        out.close();
     }
+
+
 }

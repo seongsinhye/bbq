@@ -1,7 +1,7 @@
-package updateInfo;
+package main.java.updateInfo;
 
-import customerDetailInfo.CardInfo;
-import customerDetailInfo.card;
+
+import main.java.customerDetailInfo.card;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

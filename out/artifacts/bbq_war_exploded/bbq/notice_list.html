@@ -83,7 +83,7 @@
   <nav class="py-2">
       <div class="container d-flex flex-wrap" id="nav">
           <ul class="nav me-auto" id="nav1">
-              <li class="nav-item" id="nav-item1"><a href="#" class="nav-link link-dark px-2 active" aria-current="page" id="active_nav" style="color: white;">비비큐치킨</a></li>
+              <li class="nav-item" id="nav-item1"><a href="main.html" class="nav-link link-dark px-2 active" aria-current="page" id="active_nav" style="color: white;">비비큐치킨</a></li>
               <li class="nav-item"><a href="#" class="nav-link link-dark px-2">비비큐 몰</a></li>
               <li class="nav-item"><a href="#" class="nav-link link-dark px-2">닭익는마을</a></li>
               <li class="nav-item"><a href="#" class="nav-link link-dark px-2">우쿠야</a></li>
@@ -287,9 +287,9 @@
 			data:"",
 		});
 		// 관리자로 로그인한 경우 공지사항 작성 버튼이 생긴다.
-		/* if(loginUserInfo.loginId = "admin"){
+		 if(loginUserInfo.loginId == "admin01"){
 			$("#icon-top").append()
-		} */
+		}
 		// 공지사항 목록 페이지에 들어오자마자 ajax를 통해서 공지사항 목록을 요청한다.
 		$.ajax({
 			url:"/bbq/notice/list",
@@ -298,9 +298,7 @@
 				
 				// 공지사항이 없다면 작성된 공지사항이 없습니다. 를 출력
 				if(noticeInfoList == undefined){
-					let tag =  "<div class=\"contents\"><span class=\"order\"></span><a href=\"#\"><span class=\"title_txt\">작성된 공지사항이 없습니다. </span></a><span class=\"order\"></span><span class=\"order_times\"></span></div>";
-					
-					$("#list").append(tag);
+
 				}else {
 					// json에 담겨있는 공지사항 정보들을 샘플에 맞게 출력하기 
 					for(let i=0; i<noticeInfoList.length; i++){

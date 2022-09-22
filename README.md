@@ -40,7 +40,7 @@ BBQ 사이트를 클론 코딩하는 프로젝트입니다.
  
  1. 브랜드스토리, 고객센터 
 <p align="center">
- <img src=" https://user-images.githubusercontent.com/107236098/191863583-846d29e8-555b-4826-834c-21c34ebb877a.gif">
+ <img src="https://user-images.githubusercontent.com/107236098/191863583-846d29e8-555b-4826-834c-21c34ebb877a.gif">
  </p>
 
 

@@ -30,4 +30,9 @@ BBQ 사이트를 클론 코딩하는 프로젝트입니다.
 
 # ✨ 화면 구성
 
+1. 메인화면 로그인 공지사항 페이지 
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/107236098/191862938-8ca33fae-fa5f-4cd3-a93d-49dda1ce6f1c.gif">
+ </p>
+
 
